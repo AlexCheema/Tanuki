@@ -1,7 +1,7 @@
 // src/index.js
 import { i18n } from '@lingui/core';
 import { I18nProvider } from '@lingui/react';
-import { el, en, es, fr } from 'make-plural/plurals';
+import { el, en, es, fr } from 'make-plural';
 import React, { useEffect } from 'react';
 
 import { messages } from '../locales/en/messages.js';

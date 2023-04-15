@@ -15,7 +15,7 @@ import { useProtocolDataContext } from 'src/hooks/useProtocolDataContext';
 import { useWeb3Context } from 'src/libs/hooks/useWeb3Context';
 import { getNetworkConfig, isFeatureEnabled } from 'src/utils/marketsAndNetworksConfig';
 
-import { TxModalTitle } from '../FlowCommons/TxModalTitle';
+import { TxModalTitle } from './TxModalTitle';
 import { ChangeNetworkWarning } from '../Warnings/ChangeNetworkWarning';
 import { TxErrorView } from './Error';
 

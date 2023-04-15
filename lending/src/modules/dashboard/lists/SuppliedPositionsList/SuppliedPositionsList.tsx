@@ -19,7 +19,7 @@ import {
   DashboardReserve,
   handleSortDashboardReserves,
 } from '../../../../utils/dashboardSortUtils';
-import { ListTopInfoItem } from '../../../dashboard/lists/ListTopInfoItem';
+import { ListTopInfoItem } from '../ListTopInfoItem';
 import { DashboardContentNoData } from '../../DashboardContentNoData';
 import { ListButtonsColumn } from '../ListButtonsColumn';
 import { ListLoader } from '../ListLoader';
