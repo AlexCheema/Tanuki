@@ -1,12 +1,10 @@
-# ETHTokyo 2023
+# Tanuki
 
-## Tanuki
-
-### Overview
+## Overview
 
 Tanuki is a trustless wallet scoring protocol using ZKP’s for trustless reading of historical on-chain activity to calculate wallet scores. Wallet scores are plug-and-play enabling use cases like paymasters with loyalty-based subsidies and lending protocols with variable rates. 
 
-### Use Cases
+## Use Cases
 
 1. Spam prevention on Lens
   - create a social credit score for accounts, only allow posting / interaction based on certain minimum score
