@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { useAccount, useContractRead, useContractWrite, usePrepareContractWrite } from 'wagmi';
+import { useAccount, useContractWrite, usePrepareContractWrite } from 'wagmi';
 import { ConnectKitButton } from 'connectkit';
 import ProposalCard, { Proposal } from "../components/ProposalCard";
+import { BigNumber } from 'ethers';
 
-const GovernorABI = [
+export const GovernorABI = [
   {
     "inputs": [],
     "name": "Empty",
@@ -872,16 +873,14 @@ const GovernorABI = [
 
 const DAODashboard = () => {
   const { isConnected, address } = useAccount();
-  const [proposals, setProposals] = React.useState<Proposal[]>([])
+  const [proposals, setProposals] = React.useState<Proposal[]>([{
+    id: "17177088833471908457285255123652872152908072858673972171913660969447308322917",
+    title: "Proposing store on Box with [77]",
+    description: "",
+    yesVotes: BigInt(0),
+    noVotes: BigInt(0),
+  }])
   const [newProposalTitle, setNewProposalTitle] = React.useState("");
-
-  const { config } = usePrepareContractWrite({
-    abi: GovernorABI,
-    functionName: 'propose',
-    args: [[], [], [], newProposalTitle],
-    enabled: isConnected
-  });
-  const { write: submitProposal } = useContractWrite(config);
 
   const handleNewProposalTitleChange = (event) => {
     setNewProposalTitle(event.target.value);
@@ -890,7 +889,6 @@ const DAODashboard = () => {
   const handleProposalSubmit = (event) => {
     event.preventDefault();
     setNewProposalTitle("");
-    submitProposal?.();
   };
 
   if (!isConnected) {
