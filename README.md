@@ -6,7 +6,7 @@ Tanuki is a trustless wallet scoring protocol. It uses ZKP’s to trustlessly re
 
 ## Architecture
 
-[Tanuki Architecture](./architecture.png)
+![Tanuki Architecture](./architecture.png)
 
 ## Use Cases
 
