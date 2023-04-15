@@ -111,7 +111,7 @@ contract AxiomActivityScoreProvider is Ownable, IScoreProvider {
         IAxiomV0.BlockHashWitness calldata startBlock,
         IAxiomV0.BlockHashWitness calldata endBlock,
         bytes calldata proof
-    ) external override {
+    ) external {
         (Instance memory instance, bytes32 startObservationPacked, bytes32 endObservationPacked) =
             getProofInstance(proof);
         // compare calldata vs proof instances:
