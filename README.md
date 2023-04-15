@@ -2,7 +2,7 @@
 
 ## Overview
 
-Tanuki is a trustless wallet scoring protocol using ZKP’s for trustless reading of historical on-chain activity to calculate wallet scores. Wallet scores are plug-and-play enabling use cases like paymasters with loyalty-based subsidies and lending protocols with variable rates. 
+Tanuki is a trustless wallet scoring protocol. It uses ZKP’s to trustlessly read historical on-chain activity to calculate wallet scores. Wallet scores are modular enabling use cases like paymasters with loyalty-based subsidies and lending protocols with variable rates.
 
 ## Use Cases
 
