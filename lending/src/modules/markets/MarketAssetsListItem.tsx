@@ -110,7 +110,7 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
           variant="subheader2"
           text={
             <IncentivesCard
-              value={Number(reserve.totalVariableDebtUSD) > 0 && connected ? reserve.variableBorrowAPY : '-1'}
+              value={Number(reserve.totalVariableDebtUSD) > 0 && connected ? parseFloat(reserve.variableBorrowAPY) * .76 : '-1'}
               incentives={reserve.vIncentivesData || []}
               symbol={reserve.symbol}
               variant="main16"

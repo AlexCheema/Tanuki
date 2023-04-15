@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import NextHead from 'next/head'
 import * as React from 'react'
 import { WagmiConfig } from 'wagmi'
+import "../styles/globals.css"
 
 import { client } from '../wagmi'
 
@@ -13,7 +14,7 @@ function App({ Component, pageProps }: AppProps) {
     <WagmiConfig client={client}>
       <ConnectKitProvider>
         <NextHead>
-          <title>My wagmi + ConnectKit App</title>
+          <title>Tanuki</title>
         </NextHead>
 
         {mounted && <Component {...pageProps} />}
