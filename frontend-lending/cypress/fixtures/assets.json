@@ -1,0 +1,991 @@
+{
+  "avalancheMarket": {
+    "AVAX": {
+      "fullName": "Avalanche",
+      "shortName": "AVAX",
+      "collateral": true,
+      "wrapped": true
+    },
+    "WAVAX": {
+      "fullName": "Wrapped Avalanche",
+      "shortName": "WAVAX",
+      "collateral": true,
+      "wrapped": true
+    },
+    "DAI": {
+      "fullName": "DAI (DAI.e)",
+      "shortName": "DAI.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin (USDC.e)",
+      "shortName": "USDC.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDT": {
+      "fullName": "USDT Coin (USDT.e)",
+      "shortName": "USDT.e",
+      "collateral": false,
+      "wrapped": false
+    },
+    "WBTC": {
+      "fullName": "WBTC Coin (WBTC.e)",
+      "shortName": "WBTC.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "WETH": {
+      "fullName": "Wrapped ETH (WETH.e)",
+      "shortName": "WETH.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "ALL": {
+      "fullName": "ALL",
+      "shortName": "all"
+    }
+  },
+  "polygonMarket": {
+    "MATIC": {
+      "fullName": "Matic",
+      "shortName": "MATIC",
+      "wrapped": true
+    },
+    "WMATIC": {
+      "fullName": "Wrapped Matic",
+      "shortName": "WMATIC",
+      "wrapped": true
+    },
+    "amWMATIC": {
+      "fullName": "amWrapped Matic",
+      "shortName": "amWMATIC",
+      "wrapped": true
+    },
+    "DAI": {
+      "fullName": "DAI",
+      "shortName": "DAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aDAI": {
+      "fullName": "aDAI",
+      "shortName": "aDAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin",
+      "shortName": "USDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aUSDC": {
+      "fullName": "aUSD",
+      "shortName": "aUSDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDT": {
+      "fullName": "USDT Coin",
+      "shortName": "USDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aUSDT": {
+      "fullName": "aUSDT",
+      "shortName": "aUSDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "EURS": {
+      "fullName": "EURS",
+      "shortName": "EURS",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aEURS": {
+      "fullName": "aEURS",
+      "shortName": "aEURS",
+      "collateral": false,
+      "wrapped": false
+    },
+    "WBTC": {
+      "fullName": "WBTC Coin",
+      "shortName": "WBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "LINK": {
+      "fullName": "LINK Coin",
+      "shortName": "LINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aLINK": {
+      "fullName": "aLINK Coin",
+      "shortName": "aLINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "WETH": {
+      "fullName": "Wrapped ETH",
+      "shortName": "WETH",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWETH": {
+      "fullName": "aWrapped ETH",
+      "shortName": "aWETH",
+      "collateral": true,
+      "wrapped": false
+    },
+    "BAL": {
+      "fullName": "Balancer",
+      "shortName": "BAL",
+      "collateral": true,
+      "wrapped": false
+    },
+    "DPI": {
+      "fullName": "DeFi Pulse Index",
+      "shortName": "BAL",
+      "collateral": true,
+      "wrapped": false
+    },
+    "CRV": {
+      "fullName": "Curve DAO Token",
+      "shortName": "CRV",
+      "collateral": true,
+      "wrapped": false
+    },
+    "GHST": {
+      "fullName": "Aavegotchi GHST",
+      "shortName": "GHST",
+      "collateral": true,
+      "wrapped": false
+    },
+    "LINK": {
+      "fullName": "ChainLink",
+      "shortName": "LINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "SUSHI": {
+      "fullName": "SUSHI",
+      "shortName": "SUSHI",
+      "collateral": true,
+      "wrapped": false
+    }
+  },
+  "ammMarket": {
+    "DAI": {
+      "fullName": "DAI",
+      "shortName": "DAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "ETH": {
+      "fullName": "Ethereum",
+      "shortName": "ETH",
+      "collateral": true,
+      "wrapped": true
+    },
+    "WBTC": {
+      "fullName": "Wrapped BTC",
+      "shortName": "WBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDT": {
+      "fullName": "USDT Coin",
+      "shortName": "USDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin",
+      "shortName": "USDC",
+      "collateral": true,
+      "wrapped": false
+    }
+  },
+  "aaveMarket": {
+    "DAI": {
+      "fullName": "DAI",
+      "shortName": "DAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "ETH": {
+      "fullName": "Ethereum",
+      "shortName": "ETH",
+      "collateral": true,
+      "wrapped": true
+    },
+    "WETH": {
+      "fullName": "WrappedEthereum",
+      "shortName": "WETH",
+      "collateral": true,
+      "wrapped": true
+    },
+    "USDT": {
+      "fullName": "USDT Coin",
+      "shortName": "USDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin",
+      "shortName": "USDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "BAT": {
+      "fullName": "Basic Attention Token",
+      "shortName": "BAT",
+      "collateral": true,
+      "wrapped": false
+    },
+    "MANA": {
+      "fullName": "Decentraland",
+      "shortName": "MANA",
+      "collateral": true,
+      "wrapped": false
+    },
+    "MKR": {
+      "fullName": "Maker",
+      "shortName": "MKR",
+      "collateral": true,
+      "wrapped": false
+    },
+    "REN": {
+      "fullName": "REN",
+      "shortName": "REN",
+      "collateral": true,
+      "wrapped": false
+    },
+    "TUSD": {
+      "fullName": "TrueUSD",
+      "shortName": "TUSD",
+      "collateral": true,
+      "wrapped": false
+    },
+    "stkAAVE": {
+      "fullName": "stkAAVE",
+      "shortName": "stkAAVE",
+      "collateral": true,
+      "wrapped": false
+    },
+    "ALL": {
+      "fullName": "all",
+      "shortName": "all",
+      "collateral": true
+    }
+  },
+  "staking": {
+    "AAVE": {
+      "fullName": "AAVE",
+      "shortName": "AAVE",
+      "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
+    },
+    "stkAAVE": {
+      "fullName": "stkAAVE",
+      "shortName": "stkAAVE",
+      "address": "0x4da27a545c0c5B758a6BA100e3a049001de870f5"
+    },
+    "ABPT": {
+      "fullName": "AAVE/ETH BPT",
+      "shortName": "ABPT",
+      "address": "0x41A08648C3766F9F9d85598fF102a08f4ef84F84"
+    },
+    "MKR": {
+      "fullName": "MKR",
+      "shortName": "MKR",
+      "address": "0x7deB5e830be29F91E298ba5FF1356BB7f8146998"
+    }
+  },
+  "fantomMarket": {
+    "FTM": {
+      "fullName": "FTM",
+      "shortName": "FTM",
+      "wrapped": true
+    },
+    "WFTM": {
+      "fullName": "WFTM",
+      "shortName": "WFTM",
+      "wrapped": true
+    },
+    "aWFTM": {
+      "fullName": "aWFTM",
+      "shortName": "aWFTM",
+      "wrapped": true
+    },
+    "DAI": {
+      "fullName": "DAI",
+      "shortName": "DAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aDAI": {
+      "fullName": "aDAI",
+      "shortName": "aDAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin",
+      "shortName": "USDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aUSDC": {
+      "fullName": "aUSD",
+      "shortName": "aUSDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDT": {
+      "fullName": "USDT Coin",
+      "shortName": "fUSDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aUSDT": {
+      "fullName": "aUSDT",
+      "shortName": "afUSDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "EURS": {
+      "fullName": "EURS",
+      "shortName": "EURS",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aEURS": {
+      "fullName": "aEURS",
+      "shortName": "aEURS",
+      "collateral": false,
+      "wrapped": false
+    },
+    "WBTC": {
+      "fullName": "WBTC Coin",
+      "shortName": "BTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWBTC": {
+      "fullName": "AAVA WBTC Coin",
+      "shortName": "aBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "LINK": {
+      "fullName": "LINK Coin",
+      "shortName": "LINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aLINK": {
+      "fullName": "aavaLINK Coin",
+      "shortName": "aLINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "WETH": {
+      "fullName": "Wrapped ETH",
+      "shortName": "ETH",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWETH": {
+      "fullName": "aavaWrapped ETH",
+      "shortName": "aETH",
+      "collateral": true,
+      "wrapped": false
+    }
+  },
+  "optimismMarket": {
+    "ETH": {
+      "fullName": "ETH",
+      "shortName": "ETH",
+      "collateral": true,
+      "wrapped": false
+    },
+    "DAI": {
+      "fullName": "DAI",
+      "shortName": "DAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aDAI": {
+      "fullName": "aDAI",
+      "shortName": "aDAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin",
+      "shortName": "USDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aUSDC": {
+      "fullName": "aaveUSD",
+      "shortName": "aUSDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "sUSD": {
+      "fullName": "sUSD",
+      "shortName": "sUSD",
+      "collateral": true,
+      "wrapped": false
+    },
+    "asUSD": {
+      "fullName": "asUSD",
+      "shortName": "asUSD",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDT": {
+      "fullName": "USDT Coin",
+      "shortName": "USDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aUSDT": {
+      "fullName": "aUSDT",
+      "shortName": "aUSDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "WBTC": {
+      "fullName": "WBTC Coin",
+      "shortName": "WBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWBTC": {
+      "fullName": "WBTC Coin",
+      "shortName": "aWBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "LINK": {
+      "fullName": "LINK Coin",
+      "shortName": "LINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aLINK": {
+      "fullName": "aLINK Coin",
+      "shortName": "aLINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "WETH": {
+      "fullName": "Wrapped ETH",
+      "shortName": "WETH",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWETH": {
+      "fullName": "aWrapped ETH",
+      "shortName": "aWETH",
+      "collateral": true,
+      "wrapped": false
+    }
+  },
+  "harmonyMarket": {
+    "ONE": {
+      "fullName": "ONE",
+      "shortName": "ONE",
+      "wrapped": true
+    },
+    "WONE": {
+      "fullName": "WONE",
+      "shortName": "WONE",
+      "wrapped": true
+    },
+    "aWONE": {
+      "fullName": "aWONE",
+      "shortName": "aWONE",
+      "wrapped": true
+    },
+    "DAI": {
+      "fullName": "DAI",
+      "shortName": "DAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aDAI": {
+      "fullName": "aDAI",
+      "shortName": "aDAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin",
+      "shortName": "USDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aUSDC": {
+      "fullName": "aUSD",
+      "shortName": "aUSDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDT": {
+      "fullName": "USDT Coin",
+      "shortName": "USDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aUSDT": {
+      "fullName": "aUSDT",
+      "shortName": "aUSDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "EURS": {
+      "fullName": "EURS",
+      "shortName": "EURS",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aEURS": {
+      "fullName": "aEURS",
+      "shortName": "aEURS",
+      "collateral": false,
+      "wrapped": false
+    },
+    "WBTC": {
+      "fullName": "WBTC Coin",
+      "shortName": "WBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWBTC": {
+      "fullName": "AAVA WBTC Coin",
+      "shortName": "aWBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "LINK": {
+      "fullName": "LINK Coin",
+      "shortName": "LINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aLINK": {
+      "fullName": "aLINK Coin",
+      "shortName": "aLINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "WETH": {
+      "fullName": "Wrapped ETH",
+      "shortName": "WETH",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWETH": {
+      "fullName": "aWrapped ETH",
+      "shortName": "aWETH",
+      "collateral": true,
+      "wrapped": false
+    }
+  },
+  "polygonV3Market": {
+    "MATIC": {
+      "fullName": "MATIC",
+      "shortName": "MATIC",
+      "wrapped": true
+    },
+    "WMATIC": {
+      "fullName": "WMATIC",
+      "shortName": "WMATIC",
+      "wrapped": true
+    },
+    "aWMATIC": {
+      "fullName": "aWMATIC",
+      "shortName": "aWMATIC",
+      "wrapped": true
+    },
+    "DAI": {
+      "fullName": "DAI",
+      "shortName": "DAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aDAI": {
+      "fullName": "aDAI",
+      "shortName": "aDAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin",
+      "shortName": "USDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aUSDC": {
+      "fullName": "aUSD",
+      "shortName": "aUSDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDT": {
+      "fullName": "USDT Coin",
+      "shortName": "USDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aUSDT": {
+      "fullName": "aUSDT",
+      "shortName": "aUSDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "EURS": {
+      "fullName": "EURS",
+      "shortName": "EURS",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aEURS": {
+      "fullName": "aEURS",
+      "shortName": "aEURS",
+      "collateral": false,
+      "wrapped": false
+    },
+    "jEUR": {
+      "fullName": "jEUR",
+      "shortName": "jEUR",
+      "collateral": false,
+      "wrapped": false
+    },
+    "agEUR": {
+      "fullName": "agEUR",
+      "shortName": "agEUR",
+      "collateral": false,
+      "wrapped": false
+    },
+    "miMATIC": {
+      "fullName": "miMATIC",
+      "shortName": "miMATIC",
+      "collateral": false,
+      "wrapped": false
+    },
+    "WBTC": {
+      "fullName": "WBTC Coin",
+      "shortName": "WBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWBTC": {
+      "fullName": "AAVA WBTC Coin",
+      "shortName": "aWBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "LINK": {
+      "fullName": "LINK Coin",
+      "shortName": "LINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aLINK": {
+      "fullName": "aLINK Coin",
+      "shortName": "aLINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "WETH": {
+      "fullName": "Wrapped ETH",
+      "shortName": "WETH",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWETH": {
+      "fullName": "aWrapped ETH",
+      "shortName": "aWETH",
+      "collateral": true,
+      "wrapped": false
+    }
+  },
+  "arbitrumMarket": {
+    "ETH": {
+      "fullName": "ETH",
+      "shortName": "ETH",
+      "wrapped": true
+    },
+    "WETH": {
+      "fullName": "WETH",
+      "shortName": "WETH",
+      "wrapped": true
+    },
+    "aWETH": {
+      "fullName": "aWETH",
+      "shortName": "aWETH",
+      "wrapped": true
+    },
+    "DAI": {
+      "fullName": "DAI",
+      "shortName": "DAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aDAI": {
+      "fullName": "aDAI",
+      "shortName": "aDAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin",
+      "shortName": "USDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aUSDC": {
+      "fullName": "aUSD",
+      "shortName": "aUSDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDT": {
+      "fullName": "USDT Coin",
+      "shortName": "USDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aUSDT": {
+      "fullName": "aUSDT",
+      "shortName": "aUSDT",
+      "collateral": false,
+      "wrapped": false
+    },
+    "EURS": {
+      "fullName": "EURS",
+      "shortName": "EURS",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aEURS": {
+      "fullName": "aEURS",
+      "shortName": "aEURS",
+      "collateral": false,
+      "wrapped": false
+    },
+    "WBTC": {
+      "fullName": "WBTC Coin",
+      "shortName": "WBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWBTC": {
+      "fullName": "AAVA WBTC Coin",
+      "shortName": "aWBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "LINK": {
+      "fullName": "LINK Coin",
+      "shortName": "LINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aLINK": {
+      "fullName": "aLINK Coin",
+      "shortName": "aLINK",
+      "collateral": true,
+      "wrapped": false
+    }
+  },
+  "avalancheV3Market": {
+    "AVAX": {
+      "fullName": "Avalanche",
+      "shortName": "AVAX",
+      "collateral": true,
+      "wrapped": true
+    },
+    "WAVAX": {
+      "fullName": "Wrapped Avalanche",
+      "shortName": "WAVAX",
+      "collateral": true,
+      "wrapped": true
+    },
+    "aWAVAX": {
+      "fullName": "aAvalanche",
+      "shortName": "aWAVAX",
+      "collateral": true,
+      "wrapped": true
+    },
+    "DAI": {
+      "fullName": "DAI (DAI.e)",
+      "shortName": "DAI.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aDAI": {
+      "fullName": "aDAI (DAI.e)",
+      "shortName": "aDAI.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin (USDC.e)",
+      "shortName": "USDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aUSDC": {
+      "fullName": "USD Coin (USDC.e)",
+      "shortName": "aUSDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDT": {
+      "fullName": "USDT Coin (USDT.e)",
+      "shortName": "USDt",
+      "collateral": false,
+      "wrapped": false
+    },
+    "aUSDT": {
+      "fullName": "USDT Coin (USDT.e)",
+      "shortName": "aUSDt",
+      "collateral": false,
+      "wrapped": false
+    },
+    "LINK": {
+      "fullName": "LINK Coin",
+      "shortName": "LINK.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aLINK": {
+      "fullName": "aLINK Coin",
+      "shortName": "aLINK.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "WBTC": {
+      "fullName": "WBTC Coin (WBTC.e)",
+      "shortName": "WBTC.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWBTC": {
+      "fullName": "WBTC Coin (WBTC.e)",
+      "shortName": "aWBTC.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "WETH": {
+      "fullName": "Wrapped ETH (WETH.e)",
+      "shortName": "WETH.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWETH": {
+      "fullName": "Wrapped ETH (WETH.e)",
+      "shortName": "aWETH.e",
+      "collateral": true,
+      "wrapped": false
+    },
+    "MAI": {
+      "fullName": "MAI",
+      "shortName": "MAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "FRAX": {
+      "fullName": "FRAX",
+      "shortName": "FRAX",
+      "collateral": true,
+      "wrapped": false
+    }
+  },
+  "ethereumV3Market": {
+    "ETH": {
+      "fullName": "ETH",
+      "shortName": "ETH",
+      "wrapped": true
+    },
+    "WETH": {
+      "fullName": "WETH",
+      "shortName": "WETH",
+      "wrapped": true
+    },
+    "aWETH": {
+      "fullName": "aWETH",
+      "shortName": "aWETH",
+      "wrapped": true
+    },
+    "DAI": {
+      "fullName": "DAI",
+      "shortName": "DAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aDAI": {
+      "fullName": "aDAI",
+      "shortName": "aDAI",
+      "collateral": true,
+      "wrapped": false
+    },
+    "USDC": {
+      "fullName": "USD Coin",
+      "shortName": "USDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aUSDC": {
+      "fullName": "aUSD",
+      "shortName": "aUSDC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "WBTC": {
+      "fullName": "WBTC Coin",
+      "shortName": "WBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aWBTC": {
+      "fullName": "AAVA WBTC Coin",
+      "shortName": "aWBTC",
+      "collateral": true,
+      "wrapped": false
+    },
+    "LINK": {
+      "fullName": "LINK Coin",
+      "shortName": "LINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "aLINK": {
+      "fullName": "aLINK Coin",
+      "shortName": "aLINK",
+      "collateral": true,
+      "wrapped": false
+    },
+    "wstETH": {
+      "fullName": "wstETH",
+      "shortName": "wstETH",
+      "collateral": true,
+      "wrapped": false
+    },
+    "awstETH": {
+      "fullName": "awstETH",
+      "shortName": "awstETH",
+      "collateral": true,
+      "wrapped": false
+    }
+  }
+}
