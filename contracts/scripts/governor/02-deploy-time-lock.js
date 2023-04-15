@@ -1,4 +1,4 @@
-import verify, { networkConfig, developmentChains, MIN_DELAY } from "./helpers"
+import verify, { networkConfig, developmentChains, MIN_DELAY } from "./helpers.js"
 
 
 const deployTimeLock = async function (hre) {

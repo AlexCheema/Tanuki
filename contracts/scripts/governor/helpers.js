@@ -1,4 +1,5 @@
-import { run } from "hardhat"
+import pkg from 'hardhat';
+const { run } = pkg;
 
 const verify = async (contractAddress, args) => {
   console.log("Verifying contract...")
@@ -14,6 +15,14 @@ const verify = async (contractAddress, args) => {
       console.log(e)
     }
   }
+}
+
+export const networkConfig = {
+  localhost: {},
+  hardhat: {},
+  sepolia: {
+    blockConfirmations: 6,
+  },
 }
 
 export default verify

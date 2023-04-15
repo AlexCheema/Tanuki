@@ -5,7 +5,7 @@ import verify, {
   QUORUM_PERCENTAGE,
   VOTING_PERIOD,
   VOTING_DELAY,
-} from "./helpers"
+} from "./helpers.js"
 
 
 const deployGovernorContract = async function (hre) {

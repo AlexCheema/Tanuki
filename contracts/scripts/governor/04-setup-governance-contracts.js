@@ -1,5 +1,6 @@
-import verify, { networkConfig, developmentChains, ADDRESS_ZERO } from "./helpers"
-import { ethers } from "hardhat"
+import verify, { networkConfig, developmentChains, ADDRESS_ZERO } from "./helpers.js"
+import pkg from 'hardhat';
+const { ethers } = pkg;
 
 const setupContracts = async function (hre) {
   // @ts-ignore

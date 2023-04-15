@@ -1,5 +1,6 @@
-import verify, { networkConfig, developmentChains } from "./helpers"
-import { ethers } from "hardhat"
+import verify, { networkConfig, developmentChains } from "./helpers.js"
+import pkg from 'hardhat';
+const { ethers } = pkg;
 
 const deployGovernanceToken = async function (hre) {
   // @ts-ignore
