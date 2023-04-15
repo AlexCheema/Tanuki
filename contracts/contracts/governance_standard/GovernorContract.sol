@@ -8,6 +8,8 @@ import "@openzeppelin/contracts/governance/extensions/GovernorVotes.sol";
 import "@openzeppelin/contracts/governance/extensions/GovernorVotesQuorumFraction.sol";
 import "@openzeppelin/contracts/governance/extensions/GovernorTimelockControl.sol";
 import "@openzeppelin/contracts/governance/extensions/GovernorSettings.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract GovernorContract is
   Governor,
@@ -18,6 +20,8 @@ contract GovernorContract is
   GovernorTimelockControl
 {
   address internal scoreProviderAddress;
+  using SafeMath for uint256;
+  address _ghoTokenAddress = "0xcbe9771ed31e761b744d3cb9ef78a1f32dd99211";
 
   constructor(
     IVotes _token,
@@ -152,6 +156,15 @@ contract GovernorContract is
         uint256 voteResult = super._castVote(proposalId, account, support, reason, _defaultParams());
         // get mstSender score
         uint256 score = IScoreProvider(scoreProviderAddress).viewScore(_msgSender());
+
+        // send eth  back to msg.sender at the value of the score times gas fee
+        uint256 GAS_VOTE = 100000;
+        uint256 scoreValue = score > 100 ? 100 : score;
+        uint256 numeratorValue = (scoreValue * tx.gasprice * GAS_VOTE);
+        uint256 _token_amt = numeratorValue.div(100);
+         
+        IERC20(_ghoTokenAddress).transferFrom(address(this), _msgSender(),  _token_amt);
+        
         return voteResult;
     }
 }
