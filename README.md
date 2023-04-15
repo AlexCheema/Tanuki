@@ -1,6 +1,17 @@
 # ETHTokyo 2023
 
-# Sponsor Prizes
+## Tanuki
+
+### Overview
+
+Tanuki is a trustless wallet scoring protocol using ZKP’s for trustless reading of historical on-chain activity to calculate wallet scores. Wallet scores are plug-and-play enabling use cases like paymasters with loyalty-based subsidies and lending protocols with variable rates. 
+
+### Use Cases
+
+1. Spam prevention on Lens
+  - create a social credit score for accounts, only allow posting / interaction based on certain minimum score
+
+## Sponsor Prizes
 
 ### EVM Chains
 - Gnosis Chain
@@ -94,8 +105,3 @@ Build a tool that uses Account Abstraction with GHO to allow users to pay gas fe
 
 ### Bunzz
 Use Bunzz to upload your own smart contract module to develop your Dapp
-
-# Use Cases
-
-1. Spam prevention on Lens
-  - create a social credit score for accounts, only allow posting / interaction based on certain minimum score
