@@ -1,8 +1,10 @@
-import verify, { networkConfig, developmentChains } from "./helpers.js"
-import pkg from 'hardhat';
-const { ethers } = pkg;
+import { HardhatRuntimeEnvironment } from "hardhat/types"
+import { DeployFunction } from "hardhat-deploy/types"
+import verify from "../helper-functions"
+import { networkConfig, developmentChains } from "../helper-hardhat-config"
+import { ethers } from "hardhat"
 
-const deployGovernanceToken = async function (hre) {
+const deployGovernanceToken: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   // @ts-ignore
   const { getNamedAccounts, deployments, network } = hre
   const { deploy, log } = deployments
@@ -25,7 +27,7 @@ const deployGovernanceToken = async function (hre) {
   log("Delegated!")
 }
 
-const delegate = async (governanceTokenAddress, delegatedAccount) => {
+const delegate = async (governanceTokenAddress: string, delegatedAccount: string) => {
   const governanceToken = await ethers.getContractAt("GovernanceToken", governanceTokenAddress)
   const transactionResponse = await governanceToken.delegate(delegatedAccount)
   await transactionResponse.wait(1)

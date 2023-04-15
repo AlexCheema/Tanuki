@@ -1,7 +1,9 @@
-import verify, { networkConfig, developmentChains, MIN_DELAY } from "./helpers.js"
+import { HardhatRuntimeEnvironment } from "hardhat/types"
+import { DeployFunction } from "hardhat-deploy/types"
+import verify from "../helper-functions"
+import { networkConfig, developmentChains, MIN_DELAY } from "../helper-hardhat-config"
 
-
-const deployTimeLock = async function (hre) {
+const deployTimeLock: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   // @ts-ignore
   const { getNamedAccounts, deployments, network } = hre
   const { deploy, log } = deployments

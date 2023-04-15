@@ -1,14 +1,15 @@
-
-import verify, {
+import { HardhatRuntimeEnvironment } from "hardhat/types"
+import { DeployFunction } from "hardhat-deploy/types"
+import verify from "../helper-functions"
+import {
   networkConfig,
   developmentChains,
   QUORUM_PERCENTAGE,
   VOTING_PERIOD,
   VOTING_DELAY,
-} from "./helpers.js"
+} from "../helper-hardhat-config"
 
-
-const deployGovernorContract = async function (hre) {
+const deployGovernorContract: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   // @ts-ignore
   const { getNamedAccounts, deployments, network } = hre
   const { deploy, log, get } = deployments

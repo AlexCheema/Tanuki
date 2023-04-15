@@ -1,31 +1,19 @@
-import pkg from 'hardhat';
-const { run } = pkg;
-
-const verify = async (contractAddress, args) => {
-  console.log("Verifying contract...")
-  try {
-    await run("verify:verify", {
-      address: contractAddress,
-      constructorArguments: args,
-    })
-  } catch (e) {
-    if (e.message.toLowerCase().includes("already verified")) {
-      console.log("Already verified!")
-    } else {
-      console.log(e)
-    }
-  }
+export interface networkConfigItem {
+  ethUsdPriceFeed?: string
+  blockConfirmations?: number
 }
 
-export const networkConfig = {
+export interface networkConfigInfo {
+  [key: string]: networkConfigItem
+}
+
+export const networkConfig: networkConfigInfo = {
   localhost: {},
   hardhat: {},
   sepolia: {
     blockConfirmations: 6,
   },
 }
-
-export default verify
 
 export const developmentChains = ["hardhat", "localhost"]
 export const proposalsFile = "proposals.json"

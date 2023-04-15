@@ -135,4 +135,17 @@ contract GovernorContract is
   {
     return super.supportsInterface(interfaceId);
   }
+
+  // override
+    function _castVote(
+        uint256 proposalId,
+        address account,
+        uint8 support,
+        string memory reason
+    ) internal override returns (uint256) {
+        uint256 voteResult = super._castVote(proposalId, account, support, reason, _defaultParams());
+        // get mstSender score
+        uint256 score = IScoreProvider(scoreProviderAddress).viewScore(_msgSender());
+        return voteResult;
+    }
 }
