@@ -1,0 +1,60 @@
+{
+  "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "xAddr",
+          "type": "address"
+        }
+      ],
+      "name": "viewScore",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x6d14e6b6e3c47f97c69228904bb8b667e37487ff8f9b9b7a5df577943e93c3b9",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "transactionIndex": 0,
+    "gasUsed": "104601",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xd93cdaf620c38ad798f3a8fc110102c273ffe894fc6f151bd31e619b4d52aaf2",
+    "transactionHash": "0x6d14e6b6e3c47f97c69228904bb8b667e37487ff8f9b9b7a5df577943e93c3b9",
+    "logs": [],
+    "blockNumber": 1,
+    "cumulativeGasUsed": "104601",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "76398c14c42bf1e754ceb126090322ee",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"xAddr\",\"type\":\"address\"}],\"name\":\"viewScore\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/SimpleScoreProvider.sol\":\"SimpleScoreProvider\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/IScoreProvider.sol\":{\"content\":\"pragma solidity ^0.8.0;\\n\\ninterface IScoreProvider {\\n    function viewScore(address account) external view returns (uint256);\\n}\\n\\n\",\"keccak256\":\"0xdee9d029f7b4c93a4a4ea4b30c40fa78997c74cfd78b76bb2e91d36c3477a06b\"},\"contracts/SimpleScoreProvider.sol\":{\"content\":\"pragma solidity ^0.8.12;\\n\\nimport \\\"./IScoreProvider.sol\\\";\\n\\ncontract SimpleScoreProvider is IScoreProvider {\\n    function viewScore(address xAddr) external pure override returns (uint256) {\\n        return uint256(uint160(xAddr)) % 100;\\n    }\\n}\",\"keccak256\":\"0x30c7d89adb5571a78507c3713ccb6cd7fb8e45e7e1fb16d095403dc22e7fb1b1\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060ed8061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063db230b5214602d575b600080fd5b603c60383660046068565b604e565b60405190815260200160405180910390f35b6000606260646001600160a01b0384166096565b92915050565b600060208284031215607957600080fd5b81356001600160a01b0381168114608f57600080fd5b9392505050565b60008260b257634e487b7160e01b600052601260045260246000fd5b50069056fea26469706673582212208c37f423b5fa7a10694cd5089475d7626858914c8a5902fcb51be755c23e093364736f6c634300080c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063db230b5214602d575b600080fd5b603c60383660046068565b604e565b60405190815260200160405180910390f35b6000606260646001600160a01b0384166096565b92915050565b600060208284031215607957600080fd5b81356001600160a01b0381168114608f57600080fd5b9392505050565b60008260b257634e487b7160e01b600052601260045260246000fd5b50069056fea26469706673582212208c37f423b5fa7a10694cd5089475d7626858914c8a5902fcb51be755c23e093364736f6c634300080c0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

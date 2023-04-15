@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.12;
 
+import "../IScoreProvider.sol";
 import "@openzeppelin/contracts/governance/Governor.sol";
 import "@openzeppelin/contracts/governance/extensions/GovernorCountingSimple.sol";
 import "@openzeppelin/contracts/governance/extensions/GovernorVotes.sol";
@@ -16,12 +17,15 @@ contract GovernorContract is
   GovernorVotesQuorumFraction,
   GovernorTimelockControl
 {
+  address internal scoreProviderAddress;
+
   constructor(
     IVotes _token,
     TimelockController _timelock,
     uint256 _quorumPercentage,
     uint256 _votingPeriod,
-    uint256 _votingDelay
+    uint256 _votingDelay,
+    address _scoreProviderAddress
   )
     Governor("GovernorContract")
     GovernorSettings(
@@ -32,7 +36,9 @@ contract GovernorContract is
     GovernorVotes(_token)
     GovernorVotesQuorumFraction(_quorumPercentage)
     GovernorTimelockControl(_timelock)
-  {}
+  {
+    scoreProviderAddress = _scoreProviderAddress;
+  }
 
   function votingDelay()
     public
