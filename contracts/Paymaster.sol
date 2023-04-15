@@ -68,10 +68,22 @@ contract MyPaymaster is IPaymaster {
                 "Min allowance too low"
             );
 
+            // check if overpaid
+            // we will add 10% higher score to the user
+            // zk circuit will sum up all the deltas between calculated gas price and actual
+            // 
+
+            uint256 score = IScoreProvider(scorePRoviderAddress).viewScore(userAddress);
+
+            int256 scoreMultiplier = 100 - min(200, score);
+            if (scoreMultiplier < 0) {
+                scoreMultiplier = 0;
+            }
+
             // Note, that while the minimal amount of ETH needed is tx.gasPrice * tx.gasLimit,
             // neither paymaster nor account are allowed to access this context variable.
-            uint256 requiredETH = _transaction.gasLimit *
-                _transaction.maxFeePerGas;
+            uint256 requiredETH = (_transaction.gasLimit *
+                _transaction.maxFeePerGas * scoreMultiplier) / 100;
 
             try
                 IERC20(token).transferFrom(userAddress, thisAddress, amount)
