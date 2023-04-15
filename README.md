@@ -6,8 +6,10 @@ Tanuki is a trustless wallet scoring protocol using ZKP’s for trustless readin
 
 ## Use Cases
 
-1. Spam prevention on Lens
-  - create a social credit score for accounts, only allow posting / interaction based on certain minimum score
+1. Credit score protocols which offer different terms to users based on their scores.
+2. NFT pricing models that consider the wallets' past interactions with the NFT to accurately estimate price.
+3. Paymasters that determine the amount of gas fee reimbursement for each user. Currently, these methods are performed off-chain, resulting in centralized, less transparent, and trust-dependent systems.
+4. Spam prevention on Lens: create a social credit score for accounts, only allow posting / interaction based on certain minimum score
 
 ## Sponsor Prizes
 
