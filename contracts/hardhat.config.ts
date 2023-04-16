@@ -15,7 +15,7 @@ const SEPOLIA_RPC_URL =
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "privatKey";
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "";
 
-let accounts = { mnemonic: "your mnemonic here", }
+let accounts = { mnemonic: "your mnemonic here" };
 
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
@@ -39,11 +39,11 @@ const config: HardhatUserConfig = {
     },
     mumbai: {
       url: "https://rpc-mumbai.maticvigil.com",
-      accounts: [process.env.PRIVATE_KEY],
+      accounts: [PRIVATE_KEY],
     },
     matic: {
-      url: process.env.ALCHEMY_URL,
-      accounts: [process.env.PRIVATE_KEY || ""],
+      url: process.env.ALCHEMY_URL || "",
+      accounts: [PRIVATE_KEY || ""],
     },
   },
   solidity: {
