@@ -15,6 +15,8 @@ const SEPOLIA_RPC_URL =
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "privatKey";
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "";
 
+let accounts = { mnemonic: "your mnemonic here", }
+
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
@@ -25,6 +27,15 @@ const config: HardhatUserConfig = {
     localhost: {
       chainId: 31337,
       allowUnlimitedContractSize: true,
+    },
+    gnosis: {
+      url: "https://rpc.gnosischain.com",
+      accounts: accounts,
+    },
+    chiado: {
+      url: "https://rpc.chiadochain.net",
+      gasPrice: 1000000000,
+      accounts: accounts,
     },
   },
   solidity: {
