@@ -37,6 +37,16 @@ Tanuki is a trustless wallet scoring protocol. It uses ZKP’s to trustlessly re
 
 [SimpleScoreProvider](https://l2explorer.hackathon.taiko.xyz/address/0xb3fdBFf207be9d12006C7eaE6635226280DE8556)
 
+
+#### Mantle Test Net deployments
+
+[GovernanceToken](https://explorer.testnet.mantle.xyz/address/0x64845507e9304ea3427440837d5a000D9Aa08fc0)
+
+[SimpleScoreProvider](hhttps://explorer.testnet.mantle.xyz/address/0x3baEf58f49e836d5127a161Ce827ecBa3577B73d)
+
+[SimpleScoreProvider](hhttps://explorer.testnet.mantle.xyz/address/0xd5bBa668908C2AB9c9926A505A24C368e401181a)
+
+
 ## Sponsor Prizes
 
 ### EVM Chains
