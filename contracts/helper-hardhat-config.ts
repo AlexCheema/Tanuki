@@ -27,7 +27,8 @@ export const networkConfig: networkConfigInfo = {
   },
   scrollAlpha: {
     blockConfirmations: 6
-  }
+  },
+  taiko: {}
 };
 
 export const developmentChains = ["hardhat", "localhost"];

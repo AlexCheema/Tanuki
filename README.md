@@ -19,6 +19,7 @@ Tanuki is a trustless wallet scoring protocol. It uses ZKP’s to trustlessly re
 ### Deployments
 
 #### Polygon Mumbai
+[Twitter Link](https://twitter.com/0xminmi/status/1647453283936780289)
 
 [GovernanceToken](https://mumbai.polygonscan.com/address/0x64845507e9304ea3427440837d5a000D9Aa08fc0)
 
@@ -28,8 +29,13 @@ Tanuki is a trustless wallet scoring protocol. It uses ZKP’s to trustlessly re
 
 [GovernanceToken](https://blockscout.scroll.io/address/0x17C9378f864f04B6FaFB4783755d14e15c61a3b2)
 
-[SimpleScoreProvider](https://blockscout.scroll.io/address/0xa23cD8e97730C4B099576a24816e6f9BCa2A395a)
+[SimpleScoreProvider](https://blockscout.scroll.io/address/0xa23cD8e97730C4B099576a24816e6f9BCa2A395a)G
 
+#### Taiko Hackathon Network
+
+[GovernanceToken](https://l2explorer.hackathon.taiko.xyz/address/0xa23cD8e97730C4B099576a24816e6f9BCa2A395a)
+
+[SimpleScoreProvider](https://l2explorer.hackathon.taiko.xyz/address/0xb3fdBFf207be9d12006C7eaE6635226280DE8556)
 
 ## Sponsor Prizes
 

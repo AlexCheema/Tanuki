@@ -41,10 +41,10 @@ const config: HardhatUserConfig = {
       url: "https://rpc-mumbai.maticvigil.com",
       accounts: [PRIVATE_KEY],
     },
-    // matic: {
-    //   url: process.env.ALCHEMY_URL,
-    //   accounts: [PRIVATE_KEY],
-    // },
+    matic: {
+      url: process.env.ALCHEMY_URL ?? "",
+      accounts: [PRIVATE_KEY],
+    },
     "mantle-testnet": {
       url: "https://rpc.testnet.mantle.xyz/",
       accounts: [PRIVATE_KEY]
@@ -53,6 +53,10 @@ const config: HardhatUserConfig = {
       url: "https://alpha-rpc.scroll.io/l2",
       accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
     },
+    taiko: {
+      url: "https://l2rpc.hackathon.taiko.xyz",
+      accounts: [PRIVATE_KEY]
+    }
   },
   solidity: {
     version: "0.8.12",
