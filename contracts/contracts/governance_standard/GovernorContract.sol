@@ -21,7 +21,7 @@ contract GovernorContract is
 {
   address internal scoreProviderAddress;
   using SafeMath for uint256;
-  address _ghoTokenAddress = "0xcbe9771ed31e761b744d3cb9ef78a1f32dd99211";
+  address _ghoTokenAddress = 0xcbE9771eD31e761b744D3cB9eF78A1f32DD99211;
 
   constructor(
     IVotes _token,

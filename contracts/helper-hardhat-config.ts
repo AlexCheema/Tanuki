@@ -13,6 +13,15 @@ export const networkConfig: networkConfigInfo = {
   sepolia: {
     blockConfirmations: 6,
   },
+  mumbai: {
+    blockConfirmations: 6,
+  },
+  gnosis: {
+    blockConfirmations: 6,
+  },
+  chiado: {
+    blockConfirmations: 6,
+  },
 };
 
 export const developmentChains = ["hardhat", "localhost"];

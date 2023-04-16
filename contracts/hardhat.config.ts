@@ -15,7 +15,7 @@ const SEPOLIA_RPC_URL =
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "privatKey";
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "";
 
-let accounts = { mnemonic: "your mnemonic here", }
+let accounts = { mnemonic: "your mnemonic here" };
 
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
