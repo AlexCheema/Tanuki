@@ -47,7 +47,7 @@ const config: HardhatUserConfig = {
     },
     "mantle-testnet": {
       url: "https://rpc.testnet.mantle.xyz/",
-      accounts: [PRIVATE_KEY]
+      accounts: [PRIVATE_KEY],
     },
     scrollAlpha: {
       url: "https://alpha-rpc.scroll.io/l2",
@@ -55,8 +55,13 @@ const config: HardhatUserConfig = {
     },
     taiko: {
       url: "https://l2rpc.hackathon.taiko.xyz",
-      accounts: [PRIVATE_KEY]
-    }
+      accounts: [PRIVATE_KEY],
+    },
+    mantle: {
+      chainId: 5001,
+      url: "https://rpc.testnet.mantle.xyz",
+      accounts: [PRIVATE_KEY || ""],
+    },
   },
   solidity: {
     version: "0.8.12",

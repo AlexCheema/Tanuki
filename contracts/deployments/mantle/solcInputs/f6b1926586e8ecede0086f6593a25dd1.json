@@ -1,0 +1,38 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/IScoreProvider.sol": {
+      "content": "pragma solidity ^0.8.0;\n\ninterface IScoreProvider {\n    function viewScore(address account) external view returns (uint256);\n}\n\n"
+    },
+    "contracts/SimpleScoreProvider.sol": {
+      "content": "pragma solidity ^0.8.12;\n\nimport \"./IScoreProvider.sol\";\n\ncontract SimpleScoreProvider is IScoreProvider {\n    function viewScore(address xAddr) external pure override returns (uint256) {\n        return uint256(uint160(xAddr)) % 100;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

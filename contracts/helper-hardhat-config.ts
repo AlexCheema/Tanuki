@@ -19,6 +19,9 @@ export const networkConfig: networkConfigInfo = {
   gnosis: {
     blockConfirmations: 6,
   },
+  mantle: {
+    blockConfirmations: 6,
+  },
   chiado: {
     blockConfirmations: 6,
   },
