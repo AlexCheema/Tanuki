@@ -48,7 +48,11 @@ const config: HardhatUserConfig = {
     "mantle-testnet": {
       url: "https://rpc.testnet.mantle.xyz/",
       accounts: [PRIVATE_KEY]
-    }
+    },
+    scrollAlpha: {
+      url: "https://alpha-rpc.scroll.io/l2",
+      accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
+    },
   },
   solidity: {
     version: "0.8.12",

@@ -15,6 +15,22 @@ Tanuki is a trustless wallet scoring protocol. It uses ZKP’s to trustlessly re
 3. Paymasters that determine the amount of gas fee reimbursement for each user. Currently, these methods are performed off-chain, resulting in centralized, less transparent, and trust-dependent systems.
 4. Spam prevention on Lens: create a social credit score for accounts, only allow posting / interaction based on certain minimum score
 
+
+### Deployments
+
+#### Polygon Mumbai
+
+[GovernanceToken](https://mumbai.polygonscan.com/address/0x64845507e9304ea3427440837d5a000D9Aa08fc0)
+
+[SimpleScoreProvider](https://mumbai.polygonscan.com/address/0x3baEf58f49e836d5127a161Ce827ecBa3577B73d)
+
+#### Scroll Alpha
+
+[GovernanceToken](https://blockscout.scroll.io/address/0x17C9378f864f04B6FaFB4783755d14e15c61a3b2)
+
+[SimpleScoreProvider](https://blockscout.scroll.io/address/0xa23cD8e97730C4B099576a24816e6f9BCa2A395a)
+
+
 ## Sponsor Prizes
 
 ### EVM Chains

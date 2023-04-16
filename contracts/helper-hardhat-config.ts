@@ -22,6 +22,12 @@ export const networkConfig: networkConfigInfo = {
   chiado: {
     blockConfirmations: 6,
   },
+  "mantle-testnet": {
+    blockConfirmations: 6
+  },
+  scrollAlpha: {
+    blockConfirmations: 6
+  }
 };
 
 export const developmentChains = ["hardhat", "localhost"];
