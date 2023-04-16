@@ -30,21 +30,25 @@ const config: HardhatUserConfig = {
     },
     gnosis: {
       url: "https://rpc.gnosischain.com",
-      accounts: accounts,
+      accounts: [PRIVATE_KEY],
     },
     chiado: {
       url: "https://rpc.chiadochain.net",
       gasPrice: 1000000000,
-      accounts: accounts,
+      accounts: [PRIVATE_KEY],
     },
     mumbai: {
       url: "https://rpc-mumbai.maticvigil.com",
-      accounts: [process.env.PRIVATE_KEY],
+      accounts: [PRIVATE_KEY],
     },
-    matic: {
-      url: process.env.ALCHEMY_URL,
-      accounts: [process.env.PRIVATE_KEY || ""],
-    },
+    // matic: {
+    //   url: process.env.ALCHEMY_URL,
+    //   accounts: [PRIVATE_KEY],
+    // },
+    "mantle-testnet": {
+      url: "https://rpc.testnet.mantle.xyz/",
+      accounts: [PRIVATE_KEY]
+    }
   },
   solidity: {
     version: "0.8.12",
