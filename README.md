@@ -1,5 +1,9 @@
 # Tanuki
 
+## 🏆 Main Prize Winner ETHGlobal Tokyo
+
+ETHGlobal Tokyo Demo: https://ethglobal.com/showcase/tanuki-s8ew9
+
 ## Overview
 
 Tanuki is a trustless wallet scoring protocol. It uses ZKP’s to trustlessly read historical on-chain activity to calculate wallet scores. Wallet scores are modular, enabling use cases like paymasters with loyalty-based subsidies and lending protocols with variable rates.
